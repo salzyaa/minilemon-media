@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const CardTitle = ({ image, title, date, time }) => {
   return (
     <div className="bg-white p-1 max-w-xl ml-5">

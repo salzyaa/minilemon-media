@@ -1,7 +1,7 @@
 import React from "react";
-import { CardTitle } from "./CardArticle";
-import CardTag from "./CardTag";
-import { Card, ArticleInfo } from "./CardArticle2";
+import { CardTitle } from "../components/cards/CardArticle";
+import CardTag from "../components/cards/CardTag";
+import { Card, ArticleInfo } from "../components/cards/CardArticle2";
 
 const Home = () => {
   const cardTag1 = [
