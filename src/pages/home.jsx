@@ -84,7 +84,7 @@ const Home = () => {
       />
       {/*Section artikel populer*/}
       {popularArticles.length > 0 && (
-        <div className="w-full max-w-[1170px] flex flex-col md:flex-row items-center gap-6 p-6 p-4 md-grid mx-auto "> 
+        <div className="w-full max-w-[1170px] flex flex-col md:flex-row items-center gap-6 p-4 lg-grid mx-auto "> 
           <div className="md:col-span-2">
             <div className="relative">
               <img
@@ -144,10 +144,10 @@ const Home = () => {
       <CardTag
         text="Baca Juga"
         color="#58A2C5"
-        icon="https://s3-alpha-sig.figma.com/img/e95e/2dcb/fd48fee18fea3916217296ecb426e41e?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KVF93HUs5oYIbZyufiDubi9pi7Lq5IK8VjXzTIwLlaNRhOhowGh6mdHMPNsq7N83jaiWEIq1DOToo485vOUXDCxbIgw~u3TON4U8j7FfTRcxCUkCoDB6pubKw4MUSvgRWuRuqDUmvYb1S16SUhTUQkrUftJSW2ybQzBWVajp9SZxESoWM7~tVlUOv-RfL4jZmdROaW5sNX~EmjUkDOUzuoYQBs5T71hy7-NXKrnVpYJEskwu-70ZduWwkCRZMBqriZdAGHflRZoGJ5SHcgRnkHTJS5ti4gXhhHbM4zfk8xJi49ZUQGD6IZgqT2Bv2M2bkJLkVHu5RaZ5o1E-BRQJzg__"
+        icon="/images/icon/iconbacajuga.png"
       />
       {/* Section Artikel Baca Juga */}
-      <div className="w-full max-w-[1170px] grid grid-cols-1 md:grid-cols-2 gap-6 p-4 mx-auto">
+      <div className="w-full max-w-[1170px] grid grid-cols-1 md:grid-cols-2 gap-6 p-4 mx-auto mt-5">
 
         {regularArticles.map((article, index) => (
           <Card

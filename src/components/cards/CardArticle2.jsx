@@ -84,10 +84,10 @@ const ArticleInfo = [
 ];
 
 const Card = ({ title, category, date, image, type }) => {
-  const imageSize = type === "populer" ? "w-[204px] h-[112px]" : "w-[146px] h-[146px]";
+  const imageSize = type === "populer" ? "w-[146px] h-[146px] md:w-[204px] md:h-[112px]" : "  w-[146px] h-[146px]";
 
   return (
-    <div className="flex bg-white overflow-hidden p-2 gap-2 w-[570px] h-[146px] items-center">
+    <div className="flex flex-row bg-white overflow-hidden p-2 gap-2 w-full  md:h-[146px] items-center">
       {/* Gambar */}
       <img
         src={image}
@@ -96,7 +96,7 @@ const Card = ({ title, category, date, image, type }) => {
       />
 
       {/* Konten */}
-      <div className="flex flex-col justify-center p-2">
+      <div className="flex flex-col justify-center p-2 w-full min-w-0">
         <span
           className="w-fit inline-block text-[#111928] text-[12px] font-medium px-[10px] py-[3px] rounded-[30px]"
           style={{ backgroundColor: "#FFF6CC" }}
