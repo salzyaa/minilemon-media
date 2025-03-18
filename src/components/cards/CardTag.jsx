@@ -1,9 +1,10 @@
 const CardTag = ({ text, color, icon}) => {
   return (
-    <div className="flex items-center justify-between w-full h-[100px] px-12">
+    <div className="w-full max-w-[1170px] grid grid-cols-1 md:grid-cols-2 gap-6 p-4 mx-auto ">
+      {/* w-full max-w-[1170px] grid grid-cols-1 md:grid-cols-2 gap-6 p-4 mx-auto */}
       {/* Tag */}
       <div
-        className="text-white font-bold text-xl pl-20 pr-8 flex items-center h-full ml-[-15px]"
+        className="text-white font-bold text-xl pl-20 pr-8 flex items-center h-full ml-4"
         style={{
           backgroundColor: color,
           fontFamily: "Poppins",
@@ -19,20 +20,21 @@ const CardTag = ({ text, color, icon}) => {
       <img
         src={icon}
         alt="Icon"
-        className="absolute left-14"
+        className="absolute left-54 "
         style={{
           width: "73.18px",
           height: "94px",
-          transform: "translate(-20%, -6%)",
+          transform: "translate(-20%, -35%)",
         }}
       />
 
-      {/* Lihat Lebih Banyak */}
-      {text !== "Artikel Populer" && text !== "Baca Juga" && (
-        <div className="text-[#8F8F8F] text-[18px] font-medium cursor-pointer underline ml-4">
-          Lihat Lebih Banyak
-        </div>
-      )}
+   {/* Lihat Lebih Banyak */}
+{text !== "Artikel Populer" && text !== "Baca Juga" && (
+  <div className="w-full max-w-[1170px] flex justify-end text-[#8F8F8F] text-[18px] font-medium cursor-pointer underline p-4 mx-auto"> 
+    Lihat Lebih Banyak
+  </div>
+)}
+
     </div>
   );
 };
