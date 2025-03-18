@@ -1,8 +1,11 @@
 import React from "react";
-import Home from "./home";
+import MainLayout from "./components/layout/MainLayout"
+import Home from "./pages/home"
 
 function App() {
-  return <Home />;
+  return <MainLayout>
+    <Home/>
+  </MainLayout>;
 }
 
 export default App;
